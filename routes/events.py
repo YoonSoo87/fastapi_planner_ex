@@ -6,6 +6,7 @@ event_router = APIRouter(tags=['Events'])
 
 events = []
 
+
 @event_router.get("/", response_model=List[Event])
 async def retrieve_all_events() -> List[Event]:
     return events

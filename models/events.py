@@ -9,6 +9,7 @@ class Event(BaseModel):
     tags: List[str]
     location: str
 
+
     class Config:
         json_schema_extra = {
             "example" : {
